@@ -1,0 +1,6 @@
+include ':library'
+include ':eamil'
+include ':zemaillib'
+include ':mailsender'
+include ':app'
+rootProject.name = "ControlProject"

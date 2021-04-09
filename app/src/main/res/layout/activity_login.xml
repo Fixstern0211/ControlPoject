@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_below="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="RemoteService"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/deep_yellow"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textColor="@color/deep_yellow"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+
+        <ImageView
+            android:id="@+id/iv_icon_user"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@mipmap/icon_user"
+            android:paddingRight="5dp"/>
+
+        <EditText
+            android:layout_toRightOf="@+id/iv_icon_user"
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="user"
+            android:text="z354746852@gmail.com"
+            android:textColor="@color/cream"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:text="appPassword"
+        android:textColor="@color/deep_yellow"
+        />
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="30dp">
+
+        <ImageView
+            android:id="@+id/iv_icon_pass"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@mipmap/icon_pass"
+            android:paddingRight="5dp"/>
+
+        <EditText
+            android:layout_toRightOf="@+id/iv_icon_pass"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:text="mirdwqppsssbbt"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="20dp"
+            android:textColor="@color/cream"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_change_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="visible"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/deep_yellow"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        android:background="@drawable/button_btn"
+        android:textColor="@color/deep_yellow"
+        />
+
+</LinearLayout>

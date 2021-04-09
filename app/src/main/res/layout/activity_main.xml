@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@mipmap/background">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:paddingVertical="10dp"
+            android:text="Remote"
+            android:textAlignment="center"
+            android:textColor="@color/deep_yellow"
+            android:textSize="60sp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/iv_logo"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="start"
+            android:background="@drawable/button_btn"
+            android:layout_marginHorizontal="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_Shutdown"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/exit"
+            android:background="@drawable/button_btn"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_Start"
+            />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_from"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="240dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:hint="from xxxx@gmail.com"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:textColor="@color/cream"-->
+<!--                    />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_password"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="240dp"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:layout_below="@id/et_from"-->
+<!--                    android:hint="password"-->
+<!--                    android:text="mirdwqppsssbbtcx"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:textColor="@color/cream"-->
+<!--                    />-->
+
+                <EditText
+                    android:id="@+id/et_to"
+                    android:layout_height="wrap_content"
+                    android:layout_width="240dp"
+                    android:maxLines="1"
+                    android:hint="to xxxx@gmail.com"
+                    android:text="z354746852@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/cream"
+                    />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/deep_yellow"
+            android:text="photo"
+            android:background="@drawable/button_btn"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnMedia"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/deep_yellow"
+            android:text="start media"
+            android:background="@drawable/button_btn"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnMedia"
+            android:textColor="@color/deep_yellow"
+            android:text="stop media"
+            android:background="@drawable/button_btn"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/deep_yellow"
+            android:text="start audio"
+            android:background="@drawable/button_btn"/>
+
+        <Button
+            android:id="@+id/btnStopAudio"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btnAudio"
+            android:textColor="@color/deep_yellow"
+            android:text="stop audio"
+            android:background="@drawable/button_btn"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deep_yellow"
+        android:text="send"
+        android:layout_gravity="center"
+        android:background="@drawable/button_btn"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>
